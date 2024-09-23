@@ -1,5 +1,5 @@
 <script>
-    import Card from "$lib/components/Card.svelte";
+    import ProjectCard from "$lib/components/ProjectCard.svelte";
     import { Container, Row, Col } from '@sveltestrap/sveltestrap';
     export let projects;
 </script>
@@ -11,7 +11,7 @@
         <Row class="g-4">
             {#each projects as project}
             <Col lg="6" md="6" sm="12" xs="12">
-                <Card {project} />
+                <ProjectCard {project} />
             </Col>
             {/each}
         </Row>
